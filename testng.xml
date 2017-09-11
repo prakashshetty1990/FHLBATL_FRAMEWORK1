@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><suite configfailurepolicy="continue" name="Suite" parallel="none">
+  <test name="Test" preserve-order="true">
+    <classes>
+      <class name="TestCases.TC_001"/>
+      <class name="TestCases.TC_002"/>
+     <!--  <class name="TestCases.TC_003"/>
+      <class name="TestCases.TC_004"/>   -->              
+    </classes>
+  </test>
+</suite>

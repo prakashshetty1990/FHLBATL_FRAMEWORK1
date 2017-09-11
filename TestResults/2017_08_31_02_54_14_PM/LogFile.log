@@ -1,0 +1,76 @@
+ INFO | 2017-08-31 14:54:14,986 | Common.java | 73 | Startup activites...
+ INFO | 2017-08-31 14:54:14,986 | Common.java | 73 | Test Output Directory creation successful :C:\FinalDemoWorkspace\FHLBATL_FRAMEWORK\TestResults\2017_08_31_02_54_14_PM
+ INFO | 2017-08-31 14:54:14,986 | Common.java | 73 | Log File creation successful : LogFile.log
+ INFO | 2017-08-31 14:54:15,457 | Common.java | 73 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-08-31 14:54:15,587 | Common.java | 73 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-08-31 14:54:15,587 | Common.java | 73 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-08-31 14:54:15,587 | Common.java | 73 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-08-31 14:54:15,587 | Common.java | 73 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-08-31 14:54:15,587 | Common.java | 73 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-08-31 14:54:15,587 | Common.java | 73 | Element time out set
+ INFO | 2017-08-31 14:54:15,587 | Common.java | 73 | ##### Start of Test Case : Login to Adactin Application #####
+ INFO | 2017-08-31 14:54:15,597 | Common.java | 73 | Test Case Name: TC_001
+ INFO | 2017-08-31 14:54:15,597 | Common.java | 73 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-08-31 14:54:15,627 | Common.java | 73 | Test Data Set Name: TC_001
+ INFO | 2017-08-31 14:54:15,637 | Common.java | 73 | Execution Flag: Execute
+ INFO | 2017-08-31 14:54:15,637 | Common.java | 73 | Test Data Set Name: TC_001_01
+ INFO | 2017-08-31 14:54:15,637 | Common.java | 73 | Execution Flag: YES
+ INFO | 2017-08-31 14:54:15,637 | Common.java | 73 | Test Data Set Name: TC_001_02
+ INFO | 2017-08-31 14:54:15,637 | Common.java | 73 | Execution Flag: YES
+ INFO | 2017-08-31 14:54:15,637 | Common.java | 73 | Test Data Set Name: 
+ INFO | 2017-08-31 14:54:15,637 | Common.java | 73 | Execution Flag: 
+ INFO | 2017-08-31 14:54:15,647 | Common.java | 73 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-08-31 14:54:24,962 | Common.java | 73 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/
+ INFO | 2017-08-31 14:54:26,765 | Common.java | 73 | Entered Username ->prakashs
+ INFO | 2017-08-31 14:54:26,765 | Common.java | 89 | Report step generation success : Entered Username ->prakashs
+ INFO | 2017-08-31 14:54:27,626 | Common.java | 73 | Entered Password ->prakashs
+ INFO | 2017-08-31 14:54:27,626 | Common.java | 89 | Report step generation success : Entered Password ->prakashs
+ INFO | 2017-08-31 14:54:29,073 | Common.java | 73 | Clicked on WebElement-Login
+ INFO | 2017-08-31 14:54:29,073 | Common.java | 89 | Report step generation success : Clicked on WebElement-Login
+ INFO | 2017-08-31 14:54:49,431 | Common.java | 73 | The application is not in the expected page , current page: AdactIn.com - Hotel Reservation System Page.
+ERROR | 2017-08-31 14:54:52,023 | Common.java | 81 | Unable to login to application, Check Username and password
+ERROR | 2017-08-31 14:54:52,023 | Common.java | 81 | Report step generation success : Unable to login to application, Check Username and password
+ INFO | 2017-08-31 14:54:53,255 | Common.java | 73 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-08-31 14:54:53,255 | Common.java | 73 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-08-31 14:54:53,255 | Common.java | 73 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-08-31 14:54:53,255 | Common.java | 73 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-08-31 14:54:53,255 | Common.java | 73 | Element time out set
+ INFO | 2017-08-31 14:54:53,255 | Common.java | 73 | ##### Start of Test Case : Search a hotel #####
+ INFO | 2017-08-31 14:54:53,255 | Common.java | 73 | Test Case Name: TC_002
+ INFO | 2017-08-31 14:54:53,255 | Common.java | 73 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-08-31 14:54:53,325 | Common.java | 73 | Test Data Set Name: TC_002
+ INFO | 2017-08-31 14:54:53,325 | Common.java | 73 | Execution Flag: Execute
+ INFO | 2017-08-31 14:54:53,325 | Common.java | 73 | Test Data Set Name: TC_002_01
+ INFO | 2017-08-31 14:54:53,325 | Common.java | 73 | Execution Flag: YES
+ INFO | 2017-08-31 14:54:53,325 | Common.java | 73 | Test Data Set Name: 
+ INFO | 2017-08-31 14:54:53,325 | Common.java | 73 | Execution Flag: 
+ INFO | 2017-08-31 14:54:53,325 | Common.java | 73 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-08-31 14:55:00,847 | Common.java | 73 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/
+ INFO | 2017-08-31 14:55:02,420 | Common.java | 73 | Entered Username ->prakashs
+ INFO | 2017-08-31 14:55:02,420 | Common.java | 89 | Report step generation success : Entered Username ->prakashs
+ INFO | 2017-08-31 14:55:03,271 | Common.java | 73 | Entered Password ->prakash
+ INFO | 2017-08-31 14:55:03,271 | Common.java | 89 | Report step generation success : Entered Password ->prakash
+ INFO | 2017-08-31 14:55:05,282 | Common.java | 73 | Clicked on WebElement-Login
+ INFO | 2017-08-31 14:55:05,282 | Common.java | 89 | Report step generation success : Clicked on WebElement-Login
+ INFO | 2017-08-31 14:55:05,503 | Common.java | 73 | Successfully logged in to the application
+ INFO | 2017-08-31 14:55:05,503 | Common.java | 89 | Report step generation success : Successfully logged in to the application
+ INFO | 2017-08-31 14:55:06,584 | Common.java | 73 | Selected value -Sydney from dropdown->Location
+ INFO | 2017-08-31 14:55:06,584 | Common.java | 89 | Report step generation success : Selected value -Sydney from dropdown->Location
+ INFO | 2017-08-31 14:55:07,610 | Common.java | 73 | Selected value -Hotel Sunshine from dropdown->Hotel
+ INFO | 2017-08-31 14:55:07,610 | Common.java | 89 | Report step generation success : Selected value -Hotel Sunshine from dropdown->Hotel
+ INFO | 2017-08-31 14:55:08,481 | Common.java | 73 | Selected value -Deluxe from dropdown->RoomType
+ INFO | 2017-08-31 14:55:08,481 | Common.java | 89 | Report step generation success : Selected value -Deluxe from dropdown->RoomType
+ INFO | 2017-08-31 14:55:09,361 | Common.java | 73 | Selected value -2 - Two from dropdown->NumRooms
+ INFO | 2017-08-31 14:55:09,361 | Common.java | 89 | Report step generation success : Selected value -2 - Two from dropdown->NumRooms
+ INFO | 2017-08-31 14:55:10,385 | Common.java | 73 | Selected Check In Date as ->30/08/2017
+ INFO | 2017-08-31 14:55:10,385 | Common.java | 89 | Report step generation success : Selected Check In Date as ->30/08/2017
+ INFO | 2017-08-31 14:55:11,346 | Common.java | 73 | Selected Check Out Date as ->04/09/2017
+ INFO | 2017-08-31 14:55:11,346 | Common.java | 89 | Report step generation success : Selected Check Out Date as ->04/09/2017
+ INFO | 2017-08-31 14:55:12,369 | Common.java | 73 | Selected value -4 - Four from dropdown->Adults
+ INFO | 2017-08-31 14:55:12,369 | Common.java | 89 | Report step generation success : Selected value -4 - Four from dropdown->Adults
+ INFO | 2017-08-31 14:55:13,270 | Common.java | 73 | Selected value -4 - Four from dropdown->Children
+ INFO | 2017-08-31 14:55:13,270 | Common.java | 89 | Report step generation success : Selected value -4 - Four from dropdown->Children
+ INFO | 2017-08-31 14:55:14,821 | Common.java | 73 | Clicked on WebElement-Search
+ INFO | 2017-08-31 14:55:14,821 | Common.java | 89 | Report step generation success : Clicked on WebElement-Search
+ INFO | 2017-08-31 14:55:14,821 | Common.java | 73 | Clicked on Seach button
+ INFO | 2017-08-31 14:55:14,821 | Common.java | 89 | Report step generation success : Clicked on Seach button

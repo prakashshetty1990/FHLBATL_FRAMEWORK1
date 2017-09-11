@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" verbose="0" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="TestCases.TC_002">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- TestCases.TC_002 -->
+      <class name="TestCases.TC_001">
+        <methods>
+          <include name="TC_001"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- TestCases.TC_001 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,71 @@
+ INFO | 2017-03-10 16:51:38,052 | Common.java | 73 | Startup activites...
+ INFO | 2017-03-10 16:51:38,055 | Common.java | 73 | Test Output Directory creation successful :D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_51_37_PM
+ INFO | 2017-03-10 16:51:38,056 | Common.java | 73 | Log File creation successful : LogFile.log
+ INFO | 2017-03-10 16:51:38,352 | Common.java | 73 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-03-10 16:51:38,523 | Common.java | 73 | Getting value of Browser from Test Configuration file : chrome
+ INFO | 2017-03-10 16:51:38,527 | Common.java | 73 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-03-10 16:51:38,528 | Common.java | 73 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-03-10 16:51:38,528 | Common.java | 73 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-03-10 16:51:38,528 | Common.java | 73 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-03-10 16:51:38,529 | Common.java | 73 | Element time out set
+ INFO | 2017-03-10 16:51:38,529 | Common.java | 73 | ##### Start of Test Case : Login to Adactin Application #####
+ INFO | 2017-03-10 16:51:38,529 | Common.java | 73 | Test Case Name: TC_001
+ INFO | 2017-03-10 16:51:38,529 | Common.java | 73 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-03-10 16:51:38,591 | Common.java | 73 | Test Data Set Name: TC_001
+ INFO | 2017-03-10 16:51:38,591 | Common.java | 73 | Execution Flag: Category
+ INFO | 2017-03-10 16:51:38,592 | Common.java | 73 | Test Data Set Name: TC_001_01
+ INFO | 2017-03-10 16:51:38,593 | Common.java | 73 | Execution Flag: Smoke
+ INFO | 2017-03-10 16:51:38,593 | Common.java | 73 | Test Data Set Name: TC_001_02
+ INFO | 2017-03-10 16:51:38,593 | Common.java | 73 | Execution Flag: Smoke
+ INFO | 2017-03-10 16:51:38,593 | Common.java | 73 | Test Data Set Name: 
+ INFO | 2017-03-10 16:51:38,594 | Common.java | 73 | Execution Flag: 
+ INFO | 2017-03-10 16:51:38,601 | Common.java | 73 | Getting value of Browser from Test Configuration file : chrome
+ INFO | 2017-03-10 16:51:41,576 | Common.java | 73 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/
+ INFO | 2017-03-10 16:51:47,868 | Common.java | 73 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-03-10 16:51:47,868 | Common.java | 73 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-03-10 16:51:47,868 | Common.java | 73 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-03-10 16:51:47,868 | Common.java | 73 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-03-10 16:51:47,868 | Common.java | 73 | Element time out set
+ INFO | 2017-03-10 16:51:47,868 | Common.java | 73 | ##### Start of Test Case : Search a hotel #####
+ INFO | 2017-03-10 16:51:47,868 | Common.java | 73 | Test Case Name: TC_002
+ INFO | 2017-03-10 16:51:47,868 | Common.java | 73 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-03-10 16:51:47,968 | Common.java | 73 | Test Data Set Name: TC_002
+ INFO | 2017-03-10 16:51:47,968 | Common.java | 73 | Execution Flag: Category
+ INFO | 2017-03-10 16:51:47,968 | Common.java | 73 | Test Data Set Name: TC_002_01
+ INFO | 2017-03-10 16:51:47,968 | Common.java | 73 | Execution Flag: Regression
+ INFO | 2017-03-10 16:51:47,968 | Common.java | 73 | Test Data Set Name: 
+ INFO | 2017-03-10 16:51:47,968 | Common.java | 73 | Execution Flag: 
+ INFO | 2017-03-10 16:51:47,968 | Common.java | 73 | Getting value of Browser from Test Configuration file : chrome
+ INFO | 2017-03-10 16:51:50,083 | Common.java | 73 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/
+ INFO | 2017-03-10 16:51:56,724 | Common.java | 73 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-03-10 16:51:56,724 | Common.java | 73 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-03-10 16:51:56,725 | Common.java | 73 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-03-10 16:51:56,725 | Common.java | 73 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-03-10 16:51:56,725 | Common.java | 73 | Element time out set
+ INFO | 2017-03-10 16:51:56,725 | Common.java | 73 | ##### Start of Test Case : Book a hotel #####
+ INFO | 2017-03-10 16:51:56,725 | Common.java | 73 | Test Case Name: TC_003
+ INFO | 2017-03-10 16:51:56,725 | Common.java | 73 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-03-10 16:51:56,824 | Common.java | 73 | Test Data Set Name: TC_003
+ INFO | 2017-03-10 16:51:56,824 | Common.java | 73 | Execution Flag: Category
+ INFO | 2017-03-10 16:51:56,824 | Common.java | 73 | Test Data Set Name: TC_003_01
+ INFO | 2017-03-10 16:51:56,824 | Common.java | 73 | Execution Flag: Regression
+ INFO | 2017-03-10 16:51:56,824 | Common.java | 73 | Test Data Set Name: 
+ INFO | 2017-03-10 16:51:56,824 | Common.java | 73 | Execution Flag: 
+ INFO | 2017-03-10 16:51:56,824 | Common.java | 73 | Getting value of Browser from Test Configuration file : chrome
+ INFO | 2017-03-10 16:51:58,794 | Common.java | 73 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/
+ INFO | 2017-03-10 16:52:05,211 | Common.java | 73 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-03-10 16:52:05,211 | Common.java | 73 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-03-10 16:52:05,211 | Common.java | 73 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-03-10 16:52:05,211 | Common.java | 73 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-03-10 16:52:05,211 | Common.java | 73 | Element time out set
+ INFO | 2017-03-10 16:52:05,211 | Common.java | 73 | ##### Start of Test Case : New User Register functionality #####
+ INFO | 2017-03-10 16:52:05,211 | Common.java | 73 | Test Case Name: TC_004
+ INFO | 2017-03-10 16:52:05,211 | Common.java | 73 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-03-10 16:52:05,291 | Common.java | 73 | Test Data Set Name: TC_004
+ INFO | 2017-03-10 16:52:05,291 | Common.java | 73 | Execution Flag: Category
+ INFO | 2017-03-10 16:52:05,291 | Common.java | 73 | Test Data Set Name: TC_004_01
+ INFO | 2017-03-10 16:52:05,291 | Common.java | 73 | Execution Flag: Smoke
+ INFO | 2017-03-10 16:52:05,291 | Common.java | 73 | Test Data Set Name: 
+ INFO | 2017-03-10 16:52:05,291 | Common.java | 73 | Execution Flag: 
+ INFO | 2017-03-10 16:52:05,291 | Common.java | 73 | Getting value of Browser from Test Configuration file : chrome
+ INFO | 2017-03-10 16:52:07,490 | Common.java | 73 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/

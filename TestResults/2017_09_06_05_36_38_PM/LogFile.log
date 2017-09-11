@@ -1,0 +1,82 @@
+ INFO | 2017-09-06 17:36:38,561 | Common.java | 77 | Startup activites...
+ INFO | 2017-09-06 17:36:38,561 | Common.java | 77 | Test Output Directory creation successful :C:\FinalDemoWorkspace\FHLBATL_FRAMEWORK\TestResults\2017_09_06_05_36_38_PM
+ INFO | 2017-09-06 17:36:38,561 | Common.java | 77 | Log File creation successful : LogFile.log
+ INFO | 2017-09-06 17:36:38,771 | Common.java | 77 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | Element time out set
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | ##### Start of Test Case : Login to Adactin Application #####
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | Test Case Name: TC_001
+ INFO | 2017-09-06 17:36:38,971 | Common.java | 77 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-09-06 17:36:39,011 | Common.java | 77 | Test Data Set Name: TC_001
+ INFO | 2017-09-06 17:36:39,021 | Common.java | 77 | Execution Flag: Execute
+ INFO | 2017-09-06 17:36:39,021 | Common.java | 77 | Test Data Set Name: TC_001_01
+ INFO | 2017-09-06 17:36:39,021 | Common.java | 77 | Execution Flag: YES
+ INFO | 2017-09-06 17:36:39,021 | Common.java | 77 | Test Data Set Name: TC_001_02
+ INFO | 2017-09-06 17:36:39,021 | Common.java | 77 | Execution Flag: YES
+ INFO | 2017-09-06 17:36:39,021 | Common.java | 77 | Test Data Set Name: 
+ INFO | 2017-09-06 17:36:39,021 | Common.java | 77 | Execution Flag: 
+ INFO | 2017-09-06 17:36:39,021 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 17:36:47,695 | Common.java | 77 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/
+ INFO | 2017-09-06 17:36:49,488 | Common.java | 77 | Entered Username ->prakashs
+ INFO | 2017-09-06 17:36:49,488 | Common.java | 93 | Report step generation success : Entered Username ->prakashs
+ INFO | 2017-09-06 17:36:50,339 | Common.java | 77 | Entered Password ->prakashs
+ INFO | 2017-09-06 17:36:50,339 | Common.java | 93 | Report step generation success : Entered Password ->prakashs
+ INFO | 2017-09-06 17:36:50,339 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 17:36:51,795 | Common.java | 77 | Clicked on WebElement-Login
+ INFO | 2017-09-06 17:36:51,795 | Common.java | 93 | Report step generation success : Clicked on WebElement-Login
+ INFO | 2017-09-06 17:37:12,379 | Common.java | 77 | The application is not in the expected page , current page: AdactIn.com - Hotel Reservation System Page.
+ERROR | 2017-09-06 17:37:14,991 | Common.java | 85 | Unable to login to application, Check Username and password
+ERROR | 2017-09-06 17:37:14,991 | Common.java | 85 | Report step generation success : Unable to login to application, Check Username and password
+ INFO | 2017-09-06 17:37:14,991 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 17:37:16,102 | Common.java | 77 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-09-06 17:37:16,102 | Common.java | 77 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-09-06 17:37:16,102 | Common.java | 77 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-09-06 17:37:16,102 | Common.java | 77 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-09-06 17:37:16,102 | Common.java | 77 | Element time out set
+ INFO | 2017-09-06 17:37:16,102 | Common.java | 77 | ##### Start of Test Case : Search a hotel #####
+ INFO | 2017-09-06 17:37:16,102 | Common.java | 77 | Test Case Name: TC_002
+ INFO | 2017-09-06 17:37:16,102 | Common.java | 77 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-09-06 17:37:16,185 | Common.java | 77 | Test Data Set Name: TC_002
+ INFO | 2017-09-06 17:37:16,185 | Common.java | 77 | Execution Flag: Execute
+ INFO | 2017-09-06 17:37:16,185 | Common.java | 77 | Test Data Set Name: TC_002_01
+ INFO | 2017-09-06 17:37:16,185 | Common.java | 77 | Execution Flag: YES
+ INFO | 2017-09-06 17:37:16,185 | Common.java | 77 | Test Data Set Name: 
+ INFO | 2017-09-06 17:37:16,185 | Common.java | 77 | Execution Flag: 
+ INFO | 2017-09-06 17:37:16,185 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 17:37:22,699 | Common.java | 77 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/
+ INFO | 2017-09-06 17:37:24,435 | Common.java | 77 | Entered Username ->prakashs
+ INFO | 2017-09-06 17:37:24,435 | Common.java | 93 | Report step generation success : Entered Username ->prakashs
+ INFO | 2017-09-06 17:37:25,256 | Common.java | 77 | Entered Password ->prakash
+ INFO | 2017-09-06 17:37:25,256 | Common.java | 93 | Report step generation success : Entered Password ->prakash
+ INFO | 2017-09-06 17:37:25,256 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 17:37:27,267 | Common.java | 77 | Clicked on WebElement-Login
+ INFO | 2017-09-06 17:37:27,267 | Common.java | 93 | Report step generation success : Clicked on WebElement-Login
+ INFO | 2017-09-06 17:37:27,488 | Common.java | 77 | Successfully logged in to the application
+ INFO | 2017-09-06 17:37:27,488 | Common.java | 93 | Report step generation success : Successfully logged in to the application
+ INFO | 2017-09-06 17:37:27,488 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 17:37:28,602 | Common.java | 77 | Selected value -Sydney from dropdown->Location
+ INFO | 2017-09-06 17:37:28,602 | Common.java | 93 | Report step generation success : Selected value -Sydney from dropdown->Location
+ INFO | 2017-09-06 17:37:29,675 | Common.java | 77 | Selected value -Hotel Sunshine from dropdown->Hotel
+ INFO | 2017-09-06 17:37:29,675 | Common.java | 93 | Report step generation success : Selected value -Hotel Sunshine from dropdown->Hotel
+ INFO | 2017-09-06 17:37:30,631 | Common.java | 77 | Selected value -Deluxe from dropdown->RoomType
+ INFO | 2017-09-06 17:37:30,631 | Common.java | 93 | Report step generation success : Selected value -Deluxe from dropdown->RoomType
+ INFO | 2017-09-06 17:37:31,553 | Common.java | 77 | Selected value -2 - Two from dropdown->NumRooms
+ INFO | 2017-09-06 17:37:31,553 | Common.java | 93 | Report step generation success : Selected value -2 - Two from dropdown->NumRooms
+ INFO | 2017-09-06 17:37:32,576 | Common.java | 77 | Selected Check In Date as ->30/08/2017
+ INFO | 2017-09-06 17:37:32,576 | Common.java | 93 | Report step generation success : Selected Check In Date as ->30/08/2017
+ INFO | 2017-09-06 17:37:33,526 | Common.java | 77 | Selected Check Out Date as ->04/09/2017
+ INFO | 2017-09-06 17:37:33,526 | Common.java | 93 | Report step generation success : Selected Check Out Date as ->04/09/2017
+ INFO | 2017-09-06 17:37:34,604 | Common.java | 77 | Selected value -4 - Four from dropdown->Adults
+ INFO | 2017-09-06 17:37:34,604 | Common.java | 93 | Report step generation success : Selected value -4 - Four from dropdown->Adults
+ INFO | 2017-09-06 17:37:35,615 | Common.java | 77 | Selected value -4 - Four from dropdown->Children
+ INFO | 2017-09-06 17:37:35,615 | Common.java | 93 | Report step generation success : Selected value -4 - Four from dropdown->Children
+ INFO | 2017-09-06 17:37:35,615 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 17:37:37,272 | Common.java | 77 | Clicked on WebElement-Search
+ INFO | 2017-09-06 17:37:37,272 | Common.java | 93 | Report step generation success : Clicked on WebElement-Search
+ INFO | 2017-09-06 17:37:37,272 | Common.java | 77 | Clicked on Seach button
+ INFO | 2017-09-06 17:37:37,272 | Common.java | 93 | Report step generation success : Clicked on Seach button
+ INFO | 2017-09-06 17:37:37,272 | Common.java | 77 | Getting value of Browser from Test Configuration file : IE

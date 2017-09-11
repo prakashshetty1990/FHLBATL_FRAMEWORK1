@@ -1,0 +1,1141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+ExtentReports Library 2.41.0 | http://relevantcodes.com/extentreports-for-selenium/ | https://github.com/anshooarora/
+Copyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause
+Documentation: http://extentreports.relevantcodes.com 
+-->
+
+<meta charset='UTF-8' /> 
+<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
+<meta name='robots' content='noodp, noydir' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<meta name='extentx' id='extentx' content='' />
+
+<title>
+Adactin Demo
+</title>
+
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+<link href='https://cdn.rawgit.com/anshooarora/extentreports/97fc3fe7f55cba86a4f5b6ff9a2bb80de3e4867c/cdn/extent.css' type='text/css' rel='stylesheet' />
+
+<style>
+
+         	.reportName { padding-left: 10px; } 
+        
+</style>
+</head>
+
+
+<body class='extent STANDARD hide-overflow'>
+<!-- nav -->
+<nav>
+<div class='logo-container'>
+<a class='logo-content' href='http://extentreports.relevantcodes.com'>
+<span>ExtentReports</span>
+</a>
+<a href='#' data-activates='slide-out' class='button-collapse hide-on-large-only'><i class='mdi-navigation-apps'></i></a>
+</div>
+<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
+<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
+<li class='analysis waves-effect'><a href='#!' class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a></li>
+</ul>
+<span class='report-name'>Adactin Automation	</span> <span class='report-headline'> -- Demo Test Cases</span>
+<ul class='right hide-on-med-and-down nav-right'>
+<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");' title='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");'>
+<i class='mdi-hardware-desktop-windows'></i>
+</li>
+<li>
+<span class='suite-started-time'>2017-03-10 16:58:06</span>
+</li>
+<li>
+<span>v2.41.0</span>
+</li>
+</ul>
+</nav>
+<!-- /nav -->
+
+<!-- container -->
+<div class='container'>
+
+<!-- dashboard -->
+<div id='dashboard-view' class='row'>
+<div class='time-totals'>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-tests'> 
+<span class='panel-name'>Total Tests</span> 
+<span class='total-tests'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-steps'> 
+<span class='panel-name'>Total Steps</span> 
+<span class='total-steps'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s12'>
+<div class='card suite-total-time-current'> 
+<span class='panel-name'>Total Time Taken (Current Run)</span> 
+<span class='suite-total-time-current-value panel-lead'>0h 1m 22s+11ms</span> 
+</div> 
+</div>
+<div class='col l2 m4 s12'>
+<div class='card suite-total-time-overall'> 
+<span class='panel-name'>Total Time Taken (Overall)</span> 
+<span class='suite-total-time-overall-value panel-lead'>0h 1m 22s+11ms</span> 
+</div> 
+</div>
+<div class='col l2 m4 s6 suite-start-time'>
+<div class='card accent green-accent'> 
+<span class='panel-name'>Start</span> 
+<span class='panel-lead suite-started-time'>2017-03-10 16:56:44</span> 
+</div> 
+</div>
+<div class='col l2 m4 s6 suite-end-time'>
+<div class='card accent pink-accent'> 
+<span class='panel-name'>End</span> 
+<span class='panel-lead suite-ended-time'>2017-03-10 16:58:06</span> 
+</div> 
+</div>
+</div>
+<div class='charts'>
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Tests View</span>
+</div> 
+<div class='panel-setting modal-trigger test-count-setting right'>
+<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='test-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>
+</div> 
+<div>
+<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div> 
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Steps View</span>
+</div> 
+<div class='panel-setting modal-trigger step-status-filter right'>
+<a href='#step-status-filter'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='step-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='s-pass-count weight-normal'></span> step(s) passed </span>
+</div> 
+<div>
+<span class='weight-light'><span class='s-fail-count weight-normal'></span> step(s) failed, <span class='s-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div>
+<div class='col s12 m12 l4 fh'> 
+<div class='card-panel'> 
+<span class='panel-name'>Pass Percentage</span> 
+<span class='pass-percentage panel-lead'></span> 
+<div class='progress light-blue lighten-3'> 
+<div class='determinate light-blue'></div> 
+</div> 
+</div> 
+</div>
+</div>
+<div class='system-view'>
+<div class='col l4 m12 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Environment</span>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User Name</td>
+<td>prakash</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 7</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>1.7.0_71</td>
+</tr>
+<tr>
+<td>Host Name</td>
+<td>STI-D01-PRAKAS</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>chrome</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class='category-summary-view'>
+<div class='col l4 m6 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Categories</span>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Regression
+</td>
+</tr>
+<tr>
+<td>
+Smoke
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- /dashboard -->
+
+<!-- tests -->
+<div id='test-view' class='row _addedTable'>
+<div class='col _addedCell1'>
+<div class='contents'>
+<div class='card-panel heading'>
+<h5>Tests</h5>
+</div>
+<div class='card-panel filters'>
+<div>
+<a data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#' class='dropdown-button button tests-toggle'><i class='mdi-action-subject icon'></i></a>
+<ul id='tests-toggle' class='dropdown-content'>
+<li class='pass'><a href='#!'>Pass</a></li>
+<li class='fail'><a href='#!'>Fail</a></li>
+<li class='skip'><a href='#!'>Skip</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!'>Clear Filters</a></li>
+</ul>
+</div>
+<div>
+<a data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#' class='category-toggle dropdown-button button'><i class='mdi-maps-local-offer icon'></i></a>
+<ul id='category-toggle' class='dropdown-content'>
+<li class='Regression'><a href='#!'>Regression</a></li>
+<li class='Smoke'><a href='#!'>Smoke</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!'>Clear Filters</a></li>
+</ul>
+</div>
+<div>
+<a id='clear-filters' alt='Clear Filters' title='Clear Filters'><i class='mdi-navigation-close icon'></i></a>
+</div>
+<div>&nbsp;&middot;&nbsp;</div>
+<div>
+<a id='enableDashboard' alt='Enable Dashboard' title='Enable Dashboard'><i class='mdi-action-track-changes icon'></i></a>
+</div>
+<div>
+<a id='refreshCharts' alt='Refresh Charts on Filters' title='Refresh Charts on Filters' class='enabled'><i class='mdi-navigation-refresh icon'></i></i></a>
+</div>
+<div>&nbsp;&middot;</div>
+<div class='search' alt='Search Tests' title='Search Tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search Tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v no-margin-v'>
+<div class='wrapper'>
+<ul id='test-collection' class='test-collection'>
+<li class='collection-item test displayed active fail hasChildren' extentid='d0a198c7-8259-4a2d-9a9b-1a7fe99f614e'>
+<div class='test-head'>
+<span class='test-name'>TC_001 </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  smoke'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-03-10 16:56:45</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-03-10 16:57:12</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 27s+976ms</span>
+</div>
+<div class='test-desc'><font size=4 color=black>Login to Adactin Application</font><br/></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Smoke</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+<li class='displayed pass node-1x'>
+<div class='collapsible-header test-node pass'>
+<div class='right test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2017-03-10 16:56:52</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2017-03-10 16:57:02</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 9s+681ms</span>
+<span class='test-status label outline capitalize pass'>pass</span>
+</div>
+<div class='test-node-name'>TC_001_01</div>
+<div class='test-node-desc'></div>
+</div>
+<div class='collapsible-body'>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:56:52</td>
+<td class='step-details'>########### Start of Test Case Data Set: TC_001_01 ###########</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:56:53</td>
+<td class='step-details'><font color=green>1. Entered Username ->prakashs</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:56:53</td>
+<td class='step-details'><font color=green>2. Entered Password ->prakash</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:56:54</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot1.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot1.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:56:59</td>
+<td class='step-details'><font color=green>3. Clicked on WebElement-Login</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:00</td>
+<td class='step-details'><font color=green>4. Successfully logged in to the application</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:00</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot2.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot2.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:01</td>
+<td class='step-details'><font color=green>5. Clicked on WebElement-Logout Link</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:02</td>
+<td class='step-details'><font color=green>6. Clicked on WebElement-Login Again Link</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:02</td>
+<td class='step-details'>########### End of Test Case Data Set: TC_001_01 ###########</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+<li class='displayed fail node-1x'>
+<div class='collapsible-header test-node fail'>
+<div class='right test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2017-03-10 16:57:02</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2017-03-10 16:57:11</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 9s+121ms</span>
+<span class='test-status label outline capitalize fail'>fail</span>
+</div>
+<div class='test-node-name'>TC_001_02</div>
+<div class='test-node-desc'></div>
+</div>
+<div class='collapsible-body'>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:02</td>
+<td class='step-details'>########### Start of Test Case Data Set: TC_001_02 ###########</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:02</td>
+<td class='step-details'><font color=green>7. Entered Username ->prakashs</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:02</td>
+<td class='step-details'><font color=green>8. Entered Password ->wrong</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:03</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot3.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot3.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:04</td>
+<td class='step-details'><font color=green>9. Clicked on WebElement-Login</font><br/></td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>16:57:11</td>
+<td class='step-details'><font color=red>10. Unable to login to application, Check Username and password</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:11</td>
+<td class='step-details'>Check ScreenShot Below: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\TestFailure1.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\TestFailure1.png' /></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:11</td>
+<td class='step-details'>########### End of Test Case Data Set: TC_001_02 ###########</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass hasChildren' extentid='9b665d3e-7bda-4a76-b0e6-838e67fcb1c8'>
+<div class='test-head'>
+<span class='test-name'>TC_002 </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  regression'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-03-10 16:57:13</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-03-10 16:57:31</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 17s+872ms</span>
+</div>
+<div class='test-desc'><font size=4 color=black>Search a hotel</font><br/></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Regression</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+<li class='displayed pass node-1x'>
+<div class='collapsible-header test-node pass'>
+<div class='right test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2017-03-10 16:57:20</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2017-03-10 16:57:29</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 9s+333ms</span>
+<span class='test-status label outline capitalize pass'>pass</span>
+</div>
+<div class='test-node-name'>TC_002_01</div>
+<div class='test-node-desc'></div>
+</div>
+<div class='collapsible-body'>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:20</td>
+<td class='step-details'>########### Start of Test Case Data Set: TC_002_01 ###########</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:20</td>
+<td class='step-details'><font color=green>1. Entered Username ->prakashs</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:20</td>
+<td class='step-details'><font color=green>2. Entered Password ->prakash</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:20</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot4.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot4.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:20</td>
+<td class='step-details'><font color=green>3. Clicked on WebElement-Login</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:24</td>
+<td class='step-details'><font color=green>4. Successfully logged in to the application</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:24</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot5.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot5.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:24</td>
+<td class='step-details'><font color=green>5. Selected value -Sydney from dropdown->Location</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:25</td>
+<td class='step-details'><font color=green>6. Selected value -Hotel Sunshine from dropdown->Hotel</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:25</td>
+<td class='step-details'><font color=green>7. Selected value -Deluxe from dropdown->RoomType</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:25</td>
+<td class='step-details'><font color=green>8. Selected value -2 - Two from dropdown->NumRooms</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:25</td>
+<td class='step-details'><font color=green>9. Selected Check In Date as ->10/03/2017</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:26</td>
+<td class='step-details'><font color=green>10. Selected Check Out Date as ->15/03/2017</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:26</td>
+<td class='step-details'><font color=green>11. Selected value -4 - Four from dropdown->Adults</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:26</td>
+<td class='step-details'><font color=green>12. Selected value -4 - Four from dropdown->Children</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:26</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot6.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot6.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:29</td>
+<td class='step-details'><font color=green>13. Clicked on WebElement-Search</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:29</td>
+<td class='step-details'><font color=green>14. Clicked on Seach button</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:29</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot7.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot7.png' /></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:29</td>
+<td class='step-details'>########### End of Test Case Data Set: TC_002_01 ###########</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass hasChildren' extentid='cf6c1ef7-a305-4155-84c0-a6c673df5903'>
+<div class='test-head'>
+<span class='test-name'>TC_003 </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  regression'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-03-10 16:57:31</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-03-10 16:57:51</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 20s+60ms</span>
+</div>
+<div class='test-desc'><font size=4 color=black>Book a hotel</font><br/></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Regression</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+<li class='displayed pass node-1x'>
+<div class='collapsible-header test-node pass'>
+<div class='right test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2017-03-10 16:57:38</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2017-03-10 16:57:48</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 9s+342ms</span>
+<span class='test-status label outline capitalize pass'>pass</span>
+</div>
+<div class='test-node-name'>TC_003_01</div>
+<div class='test-node-desc'></div>
+</div>
+<div class='collapsible-body'>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:38</td>
+<td class='step-details'>########### Start of Test Case Data Set: TC_003_01 ###########</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:39</td>
+<td class='step-details'><font color=green>1. Entered Username ->prakashs</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:39</td>
+<td class='step-details'><font color=green>2. Entered Password ->prakash</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:39</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot8.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot8.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:43</td>
+<td class='step-details'><font color=green>3. Clicked on WebElement-Login</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:43</td>
+<td class='step-details'><font color=green>4. Successfully logged in to the application</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:43</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot9.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot9.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:43</td>
+<td class='step-details'><font color=green>5. Selected value -Sydney from dropdown->Location</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:43</td>
+<td class='step-details'><font color=green>6. Selected value -Hotel Sunshine from dropdown->Hotel</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:44</td>
+<td class='step-details'><font color=green>7. Selected value -Deluxe from dropdown->RoomType</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:44</td>
+<td class='step-details'><font color=green>8. Selected value -2 - Two from dropdown->NumRooms</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:44</td>
+<td class='step-details'><font color=green>9. Selected Check In Date as ->10/03/2017</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:44</td>
+<td class='step-details'><font color=green>10. Selected Check Out Date as ->15/03/2017</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:44</td>
+<td class='step-details'><font color=green>11. Selected value -4 - Four from dropdown->Adults</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:45</td>
+<td class='step-details'><font color=green>12. Selected value -4 - Four from dropdown->Children</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:45</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot10.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot10.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:47</td>
+<td class='step-details'><font color=green>13. Clicked on WebElement-Search</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:47</td>
+<td class='step-details'><font color=green>14. Clicked on Seach button</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:47</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot11.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot11.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:47</td>
+<td class='step-details'><font color=green>15. Clicked on WebElement-Selected</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:47</td>
+<td class='step-details'><font color=green>16. Selected radio button</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:48</td>
+<td class='step-details'><font color=green>17. Clicked on WebElement-Continue</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:57:48</td>
+<td class='step-details'><font color=green>18. Clicked on Continue Button</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:57:48</td>
+<td class='step-details'>########### End of Test Case Data Set: TC_003_01 ###########</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass hasChildren' extentid='8bd24b3c-1fe6-4c51-a28d-dcdeb0310dfc'>
+<div class='test-head'>
+<span class='test-name'>TC_004 </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  smoke'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-03-10 16:57:51</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-03-10 16:58:06</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 15s+334ms</span>
+</div>
+<div class='test-desc'><font size=4 color=black>New User Register functionality</font><br/></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Smoke</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+<li class='displayed pass node-1x'>
+<div class='collapsible-header test-node pass'>
+<div class='right test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2017-03-10 16:58:00</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2017-03-10 16:58:05</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 4s+905ms</span>
+<span class='test-status label outline capitalize pass'>pass</span>
+</div>
+<div class='test-node-name'>TC_004_01</div>
+<div class='test-node-desc'></div>
+</div>
+<div class='collapsible-body'>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:58:00</td>
+<td class='step-details'>########### Start of Test Case Data Set: TC_004_01 ###########</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:03</td>
+<td class='step-details'><font color=green>1. Clicked on WebElement-New Registration</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:03</td>
+<td class='step-details'><font color=green>2. Clicked on link->New Registration</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:03</td>
+<td class='step-details'><font color=green>3. Entered UserName->Pramela123</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:03</td>
+<td class='step-details'><font color=green>4. Entered Password->Reset123</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:04</td>
+<td class='step-details'><font color=green>5. Re Entered Password->Reset123</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:04</td>
+<td class='step-details'><font color=green>6. Entered Full Name->G</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:04</td>
+<td class='step-details'><font color=green>7. Entered Email Address->nandinig@suntechnologies.com</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:04</td>
+<td class='step-details'><font color=green>8. Clicked on WebElement-Agree</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:04</td>
+<td class='step-details'><font color=green>9. Clicked on Agree checkbox</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:58:04</td>
+<td class='step-details'>Manual Verification Point: <img class='report-img' data-featherlight='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot12.png' src='file:///D:\Prakashs_Backup\ReportWorkspace\Demo_DiffClass_OldReport\TestResults\2017_03_10_04_56_44_PM\Screenshots\Screenshot12.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:05</td>
+<td class='step-details'><font color=green>10. Clicked on WebElement-Register</font><br/></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>16:58:05</td>
+<td class='step-details'><font color=green>11. Clicked on Register Button</font><br/></td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>16:58:05</td>
+<td class='step-details'>########### End of Test Case Data Set: TC_004_01 ###########</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id='test-details-wrapper' class='col _addedCell2'>
+<div class='contents'>
+<div class='card-panel details-view'>
+<h5 class='details-name'></h5>
+<div class='step-filters right'>
+<span class='info' alt='info' title='info'><i class='mdi-action-info-outline'></i></span>
+<span class='pass' alt='pass' title='pass'><i class='mdi-action-check-circle'></i></span>
+<span class='fail' alt='fail' title='fail'><i class='mdi-navigation-cancel'></i></span>
+<span class='fatal' alt='fatal' title='fatal'><i class='mdi-navigation-cancel'></i></span>
+<span class='error' alt='error' title='error'><i class='mdi-alert-error'></i></span>
+<span class='warning' alt='warning' title='warning'><i class='mdi-alert-warning'></i></span>
+<span class='skip' alt='skip' title='skip'><i class='mdi-content-redo'></i></span>
+<span class='clear-step-filter' alt='Clear filters' title='Clear filters'><i class='mdi-content-clear'></i></span>
+</div>
+<div class='details-container'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /tests -->
+
+<!-- categories -->
+<div id='categories-view' class='row _addedTable hide'>
+<div class='col _addedCell1'>
+<div class='contents'>
+<div class='card-panel heading'>
+<h5>Categories</h5>
+</div>
+<div class='card-panel filters'>
+<div class='search' alt='Search tests' title='Search tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v'>
+<div class='wrapper'>
+<ul id='cat-collection' class='cat-collection'>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Regression</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 2</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>2</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2017-03-10 16:57:13</td>
+<td><span class='category-link linked' extentid='9b665d3e-7bda-4a76-b0e6-838e67fcb1c8'>TC_002</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tr class='pass'>
+<td>2017-03-10 16:57:31</td>
+<td><span class='category-link linked' extentid='cf6c1ef7-a305-4155-84c0-a6c673df5903'>TC_003</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Smoke</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2017-03-10 16:56:45</td>
+<td><span class='category-link linked' extentid='d0a198c7-8259-4a2d-9a9b-1a7fe99f614e'>TC_001</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tr class='pass'>
+<td>2017-03-10 16:57:51</td>
+<td><span class='category-link linked' extentid='8bd24b3c-1fe6-4c51-a28d-dcdeb0310dfc'>TC_004</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id='cat-details-wrapper' class='col _addedCell2'>
+<div class='contents'>
+<div class='card-panel details-view'>
+<h5 class='cat-name'></h5>
+<div class='cat-container'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /categories -->
+
+<!-- exceptions -->
+<!-- /exceptions -->
+
+<!-- testrunner logs -->
+<!-- /testrunner logs -->
+
+</div>
+<!-- /container -->
+
+<!-- test dashboard counts setting -->
+<div id='test-count-setting' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Configure Tests Count Setting</h5> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> 
+<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> 
+<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> 
+<label for='childNodes'>Child Tests Only</label> 
+</div> 
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /test dashboard counts setting -->
+
+<!-- filter for step status -->
+<div id='step-status-filter' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Select status</h5> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-pass'> 
+<label for='step-dashboard-filter-pass'>Pass</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fail'> 
+<label for='step-dashboard-filter-fail'>Fail</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fatal'> 
+<label for='step-dashboard-filter-fatal'>Fatal</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-error'> 
+<label for='step-dashboard-filter-error'>Error</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-warning'> 
+<label for='step-dashboard-filter-warning'>Warning</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-skip'> 
+<label for='step-dashboard-filter-skip'>Skipped</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-info'> 
+<label for='step-dashboard-filter-info'>Info</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-unknown'> 
+<label for='step-dashboard-filter-unknown'>Unknown</label> 
+</div>
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /filter for step status -->
+
+<script src='https://cdn.rawgit.com/anshooarora/extentreports/051be9b627c84bde3591f7e6268e8b70e334a760/cdn/extent.js' type='text/javascript'></script>
+
+<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>
+<script>
+
+            
+                $(document).ready(function() {
+                    
+                });
+            
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>        
+        <theme>STANDARD</theme>
+    
+        
+        <encoding>UTF-8</encoding>
+        
+        
+        <protocol>https</protocol>
+        
+        
+        <documentTitle>Adactin Demo</documentTitle>
+        
+        
+        <reportName>Adactin Automation	</reportName>
+        
+        
+        <reportHeadline> -- Demo Test Cases</reportHeadline>
+        
+        
+        <dateFormat>yyyy-MM-dd</dateFormat>
+        
+        
+        <timeFormat>HH:mm:ss</timeFormat>
+     
+        <styles>
+         	.reportName { padding-left: 10px; } 
+        </styles>
+    </configuration>
+</extentreports>

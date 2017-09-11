@@ -1,0 +1,44 @@
+ INFO | 2017-09-06 15:50:09,970 | Common.java | 76 | Startup activites...
+ INFO | 2017-09-06 15:50:09,973 | Common.java | 76 | Test Output Directory creation successful :C:\FinalDemoWorkspace\FHLBATL_FRAMEWORK\TestResults\2017_09_06_03_50_09_PM
+ INFO | 2017-09-06 15:50:09,973 | Common.java | 76 | Log File creation successful : LogFile.log
+ INFO | 2017-09-06 15:50:10,243 | Common.java | 76 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-09-06 15:50:10,371 | Common.java | 76 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 15:50:10,376 | Common.java | 76 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-09-06 15:50:10,377 | Common.java | 76 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-09-06 15:50:10,377 | Common.java | 76 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-09-06 15:50:10,377 | Common.java | 76 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-09-06 15:50:10,378 | Common.java | 76 | Element time out set
+ INFO | 2017-09-06 15:50:10,378 | Common.java | 76 | ##### Start of Test Case : New User Register functionality #####
+ INFO | 2017-09-06 15:50:10,378 | Common.java | 76 | Test Case Name: TC_004
+ INFO | 2017-09-06 15:50:10,378 | Common.java | 76 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-09-06 15:50:10,421 | Common.java | 76 | Test Data Set Name: TC_004
+ INFO | 2017-09-06 15:50:10,421 | Common.java | 76 | Execution Flag: Execute
+ INFO | 2017-09-06 15:50:10,422 | Common.java | 76 | Test Data Set Name: TC_004_01
+ INFO | 2017-09-06 15:50:10,422 | Common.java | 76 | Execution Flag: YES
+ INFO | 2017-09-06 15:50:10,423 | Common.java | 76 | Test Data Set Name: 
+ INFO | 2017-09-06 15:50:10,423 | Common.java | 76 | Execution Flag: 
+ INFO | 2017-09-06 15:50:10,431 | Common.java | 76 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 15:50:18,626 | Common.java | 76 | Getting value of url from Test Configuration file : http://www.adactin.com/HotelApp/
+ INFO | 2017-09-06 15:50:21,579 | Common.java | 76 | Clicked on WebElement-New Registration
+ INFO | 2017-09-06 15:50:21,580 | Common.java | 92 | Report step generation success : Clicked on WebElement-New Registration
+ INFO | 2017-09-06 15:50:21,580 | Common.java | 76 | Clicked on link->New Registration
+ INFO | 2017-09-06 15:50:21,580 | Common.java | 92 | Report step generation success : Clicked on link->New Registration
+ INFO | 2017-09-06 15:50:22,695 | Common.java | 76 | Entered UserName->Pramela123
+ INFO | 2017-09-06 15:50:22,695 | Common.java | 92 | Report step generation success : Entered UserName->Pramela123
+ INFO | 2017-09-06 15:50:23,809 | Common.java | 76 | Entered Password->Reset123
+ INFO | 2017-09-06 15:50:23,810 | Common.java | 92 | Report step generation success : Entered Password->Reset123
+ INFO | 2017-09-06 15:50:24,855 | Common.java | 76 | Re Entered Password->Reset123
+ INFO | 2017-09-06 15:50:24,855 | Common.java | 92 | Report step generation success : Re Entered Password->Reset123
+ INFO | 2017-09-06 15:50:25,847 | Common.java | 76 | Entered Full Name->G
+ INFO | 2017-09-06 15:50:25,848 | Common.java | 92 | Report step generation success : Entered Full Name->G
+ INFO | 2017-09-06 15:50:27,097 | Common.java | 76 | Entered Email Address->nandinig@suntechnologies.com
+ INFO | 2017-09-06 15:50:27,097 | Common.java | 92 | Report step generation success : Entered Email Address->nandinig@suntechnologies.com
+ INFO | 2017-09-06 15:50:27,940 | Common.java | 76 | Clicked on WebElement-Agree
+ INFO | 2017-09-06 15:50:27,940 | Common.java | 92 | Report step generation success : Clicked on WebElement-Agree
+ INFO | 2017-09-06 15:50:27,940 | Common.java | 76 | Clicked on Agree checkbox
+ INFO | 2017-09-06 15:50:27,940 | Common.java | 92 | Report step generation success : Clicked on Agree checkbox
+ INFO | 2017-09-06 15:50:27,941 | Common.java | 76 | Getting value of Browser from Test Configuration file : IE
+ INFO | 2017-09-06 15:50:29,369 | Common.java | 76 | Clicked on WebElement-Register
+ INFO | 2017-09-06 15:50:29,369 | Common.java | 92 | Report step generation success : Clicked on WebElement-Register
+ INFO | 2017-09-06 15:50:29,369 | Common.java | 76 | Clicked on Register Button
+ INFO | 2017-09-06 15:50:29,369 | Common.java | 92 | Report step generation success : Clicked on Register Button

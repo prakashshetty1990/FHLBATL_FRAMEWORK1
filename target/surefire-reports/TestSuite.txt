@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 60.466 sec <<< FAILURE! - in TestSuite
+TC_001(TestCases.TC_001)  Time elapsed: 37.131 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at TestCases.TC_001.TC_001(TC_001.java:42)
+
