@@ -103,8 +103,8 @@ public class SearchHotel extends Page {
 				Common.takeScreenshot();
 				return true;
 			}else{
-				Common.testAssertFail("Unable to login to application, Check Username and password" );
-				//Common.testStepFailed("Unable to login to application, Check Username and password" );
+				//Common.testAssertFail("Unable to login to application, Check Username and password" );
+				Common.testStepFailed("Unable to login to application, Check Username and password" );
 				return false;
 			}
 		}catch(Exception ex){
