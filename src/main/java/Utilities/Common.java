@@ -233,11 +233,11 @@ public class Common
 			/*Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000))
 					.takeScreenshot(GenericKeywords.driver);
 			ImageIO.write(screenshot.getImage(), "PNG", new File(scrPath + "\\" + filename + ".png"));*/
-			
+
 			Shutterbug.shootPage(GenericKeywords.driver,ScrollStrategy.BOTH_DIRECTIONS)	                       
-	        .withName(filename)
-	        .save(scrPath);
-			
+			.withName(filename)
+			.save(scrPath);
+
 		} catch (Exception e) {
 			testReporter("Red", e.toString());
 			return;
@@ -496,6 +496,15 @@ public class Common
 		}finally{
 			GenericKeywords.extent.endTest(GenericKeywords.parent);
 			GenericKeywords.extent.flush();
+			try{
+				java.io.File curdir = new java.io.File(".");
+				String strPath = curdir.getCanonicalPath()+"\\JenkinsResults\\";
+				File srcDir = new File(GenericKeywords.outputDirectory);
+				File destDir = new File(strPath);
+				FileUtils.copyDirectory(srcDir, destDir);
+			}catch(Exception ex){
+
+			}
 		}
 	}
 }
