@@ -267,7 +267,7 @@ public class Common
 					captureFullScreenShot("TestFailure" + GenericKeywords.failureNo);
 				}				
 			}	  
-			String pathAndFile = GenericKeywords.outputDirectory + "\\Screenshots\\TestFailure" + GenericKeywords.failureNo+ ".png";
+			String pathAndFile = "./Screenshots/TestFailure" + GenericKeywords.failureNo+ ".png";
 			GenericKeywords.child.log(LogStatus.INFO, "Check ScreenShot Below: " + GenericKeywords.child.addScreenCapture(pathAndFile));  	   
 		}catch(Exception ex){
 			writeToLogFile("Error", "Unable to report Failures to Extent Html Report->"+ex.getMessage());
