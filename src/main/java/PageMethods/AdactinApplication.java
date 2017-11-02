@@ -26,6 +26,10 @@ public class AdactinApplication {
 
 	public AdactinApplication() {	
 		String strbrowser = Common.getConfigProperty("Browser");
+		String strJenkinsBrowser = System.getProperty("url");
+		if(strJenkinsBrowser != null) {
+			strbrowser = strJenkinsBrowser;
+		}
 		browser=getDriver(strbrowser);
 		this.browser = browser;
 		this.url = Common.getConfigProperty("url");
@@ -74,7 +78,7 @@ public class AdactinApplication {
 	 * @return
 	 */
 	protected WebDriver getDriver(String browserName) {
-		WebDriver driver = null;
+		WebDriver driver = null;		
 		if (browserName.equalsIgnoreCase("firefox")) {
 			
 			System.setProperty("webdriver.gecko.driver", getRelativePath()+"/ext/BrowserSpecificDrivers/geckodriver.exe");

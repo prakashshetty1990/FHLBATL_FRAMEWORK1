@@ -3,7 +3,6 @@ package TestCases;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import PageMethods.AdactinHomePage;
 import PageMethods.SearchHotel;
 import Utilities.Common;
