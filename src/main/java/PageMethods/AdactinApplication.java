@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
@@ -25,14 +26,23 @@ public class AdactinApplication {
 	private Page page;
 
 	public AdactinApplication() {	
-		String strbrowser = Common.getConfigProperty("Browser");
-		String strJenkinsBrowser = System.getProperty("url");
+		String strbrowser = "";		
+		String strJenkinsBrowser = System.getProperty("browser");
+		Common.writeToLogFile("INFO", "Jenkins browser is->"+strJenkinsBrowser);
 		if(strJenkinsBrowser != null) {
 			strbrowser = strJenkinsBrowser;
+		}else{
+			strbrowser = Common.getConfigProperty("Browser");
 		}
 		browser=getDriver(strbrowser);
-		this.browser = browser;
-		this.url = Common.getConfigProperty("url");
+		this.browser = browser;		
+		String strJenkinsAppUrl = System.getProperty("url");
+		Common.writeToLogFile("INFO", "Jenkins url is->"+strJenkinsAppUrl);
+		if(strJenkinsAppUrl != null) {
+			this.url = strJenkinsAppUrl;
+		}else{
+			this.url = Common.getConfigProperty("url");
+		}
 		GenericKeywords.driver = browser;
 		
 	}
@@ -81,12 +91,7 @@ public class AdactinApplication {
 		WebDriver driver = null;		
 		if (browserName.equalsIgnoreCase("firefox")) {
 			
-			System.setProperty("webdriver.gecko.driver", getRelativePath()+"/ext/BrowserSpecificDrivers/geckodriver.exe");
-			/*ProfilesIni profilesIni = new ProfilesIni();
-
-			FirefoxProfile profile = profilesIni.getProfile("default");
-
-			profile.setEnableNativeEvents(true);*/
+			System.setProperty("webdriver.gecko.driver", getRelativePath()+"/ext/BrowserSpecificDrivers/geckodriver.exe");			
 			DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 			capabilities.setCapability("marionette", true);
 
@@ -111,6 +116,9 @@ public class AdactinApplication {
 		if(browserName.equalsIgnoreCase("safari")){			
 			driver=new SafariDriver();
 		}
+		if(browserName.equalsIgnoreCase("htmlunitdriver")){			
+			driver = new HtmlUnitDriver();
+		}		
 
 		return driver;
 	}
