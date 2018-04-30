@@ -1,0 +1,22 @@
+ INFO | 2017-11-03 12:19:53,457 | Common.java | 76 | Startup activites...
+ INFO | 2017-11-03 12:19:53,459 | Common.java | 76 | Test Output Directory creation successful :D:\Prakashs_Backup\DemoWorkspaceFinal\FHLBATL_FRAMEWORK\TestResults\2017_11_03_00_19_53_PM
+ INFO | 2017-11-03 12:19:53,460 | Common.java | 76 | Log File creation successful : LogFile.log
+ INFO | 2017-11-03 12:19:53,835 | Common.java | 76 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-11-03 12:19:54,056 | Common.java | 76 | Getting value of Browser from Test Configuration file : firefox
+ INFO | 2017-11-03 12:19:54,062 | Common.java | 76 | Getting value of ElementLoadWaitTime from Test Configuration file : 6
+ INFO | 2017-11-03 12:19:54,063 | Common.java | 76 | Getting value of TextLoadWaitTime from Test Configuration file : 10
+ INFO | 2017-11-03 12:19:54,063 | Common.java | 76 | Getting value of PageLoadWaitTime from Test Configuration file : 20
+ INFO | 2017-11-03 12:19:54,063 | Common.java | 76 | Getting value of ImplicitlyWaitTime from Test Configuration file : 30
+ INFO | 2017-11-03 12:19:54,064 | Common.java | 76 | Element time out set
+ INFO | 2017-11-03 12:19:54,064 | Common.java | 76 | ##### Start of Test Case : Login to Adactin Application #####
+ INFO | 2017-11-03 12:19:54,064 | Common.java | 76 | Test Case Name: TC_001
+ INFO | 2017-11-03 12:19:54,064 | Common.java | 76 | Getting value of TestDataFile from Test Configuration file : .\src\test\resources\TestData.xls
+ INFO | 2017-11-03 12:19:54,110 | Common.java | 76 | Test Data Set Name: TC_001
+ INFO | 2017-11-03 12:19:54,111 | Common.java | 76 | Execution Flag: Execute
+ INFO | 2017-11-03 12:19:54,111 | Common.java | 76 | Test Data Set Name: TC_001_01
+ INFO | 2017-11-03 12:19:54,113 | Common.java | 76 | Execution Flag: YES
+ INFO | 2017-11-03 12:19:54,114 | Common.java | 76 | Test Data Set Name: TC_001_02
+ INFO | 2017-11-03 12:19:54,114 | Common.java | 76 | Execution Flag: YES
+ INFO | 2017-11-03 12:19:54,114 | Common.java | 76 | Test Data Set Name: 
+ INFO | 2017-11-03 12:19:54,114 | Common.java | 76 | Execution Flag: 
+ INFO | 2017-11-03 12:19:54,156 | Common.java | 76 | Getting value of Browser from Test Configuration file : firefox
